@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextViewNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        android:textSize="@dimen/dimTextViewNom"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditTextNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nomHint"
+            android:inputType="text"
+            android:textSize="@dimen/dimEditTextNom"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/ButtonEnvoyer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bouton"
+            android:textSize="@dimen/dimButtonEnvoyer" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextViewBonjour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/couleurMessage"
+        android:textSize="@dimen/dimMessage" />
+
+</LinearLayout>
