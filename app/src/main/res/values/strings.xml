@@ -3,4 +3,5 @@
     <string name="nom">Entrez votre nom :</string>
     <string name="nomHint">Tapez votre nom ici</string>
     <string name="bouton">Envoyer</string>
+    <string name="message">Bonjour</string>
 </resources>
