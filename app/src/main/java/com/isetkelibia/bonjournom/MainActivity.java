@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button button;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // textView.setText("Bonjour " + editText.getText() + " !");
-                String message = getResources().getString(R.string.message) + editText.getText() + " !";
+                String message = getResources().getString(R.string.message) + " " + editText.getText() + " !";
                 textView.setText(message);
             }
         });
