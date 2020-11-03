@@ -8,29 +8,26 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class MainActivity extends AppCompatActivity {
-    EditText editText;
     TextView textView;
+    EditText editText;
     Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        editText = findViewById(R.id.EditTextNom);
         textView = findViewById(R.id.TextViewBonjour);
+        editText = findViewById(R.id.EditTextNom);
         button = findViewById(R.id.ButtonEnvoyer);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // textView.setText("Bonjour " + editText.getText() + " !");
-                String message = getResources().getString(R.string.message) + " " + editText.getText() + " !";
+                String message = getResources().getString(R.string.message)
+                        + " " + editText.getText().toString() + "!";
                 textView.setText(message);
             }
         });
+
     }
 }
